@@ -27,6 +27,7 @@ body {
 main {
     background-color: white;
     padding-bottom: 0.1px;
+    padding-top: 0.1px;
 }
 
 nav ul {
@@ -196,4 +197,28 @@ button {
 
 .highlight>img {
     max-width: 50%;
+}
+
+#work-item-img {
+    margin-bottom: 1rem;
+}
+
+#work-item-header {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.work-item-text {
+    margin: 0 10%;
+}
+
+.work-item-text h3 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.work-item-text p,
+.work-item-text ul {
+    margin-top: 0;
 }
