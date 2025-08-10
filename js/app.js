@@ -129,7 +129,7 @@
         const output = document.createElement('div');
 
         const h2 = document.createElement('h2');
-        h2.innerHTML = `0${id}. ${data.title.replace(' ', '<br>')}`;
+        h2.innerHTML = `0${id}. ${data.title.replaceAll(' ', '<br>')}`;
 
         const a = document.createElement('a');
         a.href = `workitem.html?item=${id}`;
