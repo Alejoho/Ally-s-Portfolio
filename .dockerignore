@@ -1,0 +1,6 @@
+./Results/
+./github/
+./vscode/
+.gitignore
+.prettierrc
+README.md
