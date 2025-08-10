@@ -1,5 +1,5 @@
 (function (app) {
-
+    'use strict';
     app.portfolioProjects = [];
     app.currentProject = {};
 
@@ -8,13 +8,15 @@
         wireContactForm();
     }
 
-    app.portfolio = function () {
+    app.portfolio = async function () {
         setCopyrightYear();
+        await loadProjectsData();
+        updatePortfolioData();
     }
 
-    app.workItem = function () {
+    app.workItem = async function () {
         setCopyrightYear();
-        loadProjectsData();
+        await loadProjectsData();
         loadCurrentProject();
         updatePageData();
     }
@@ -60,7 +62,6 @@
         }
     }
 
-
     function loadCurrentProject() {
         const params = new URLSearchParams(window.location.search);
         let item = Number.parseInt(params.get('item'));
@@ -96,5 +97,56 @@
         });
         ul.textContent = '';
         ul.appendChild(fragment);
+    }
+
+    function updatePortfolioData() {
+        const fragment = document.createDocumentFragment();
+        let isInverted = false;
+        let id = 1;
+
+        for (const project of app.portfolioProjects) {
+            const projDiv = createProjectSection(project, id);
+
+            id++;
+
+            if (isInverted) {
+                projDiv.classList.add('invert');
+            }
+
+            isInverted = !isInverted;
+
+            fragment.append(projDiv);
+        }
+
+        const main = document.querySelector('main');
+        main.textContent = '';
+        main.append(fragment);
+    }
+
+    function createProjectSection(data, id) {
+        const output = document.createElement('div');
+
+        const h2 = document.createElement('h2');
+        h2.innerHTML = `0${id}. ${data.title.replace(' ', '<br>')}`;
+
+        const a = document.createElement('a');
+        a.href = `workitem.html?item=${id}`;
+
+        a.innerText = 'see more';
+        id++;
+
+        const div = document.createElement('div');
+        div.append(h2, a);
+
+        output.append(div);
+
+        const img = document.createElement('img');
+        img.src = data.smallImage;
+        img.alt = data.smallImageAlt;
+        output.append(img);
+
+        output.classList.add('highlight');
+
+        return output;
     }
 })(window.app = window.app || {});
