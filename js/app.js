@@ -11,12 +11,14 @@
     app.portfolio = async function () {
         setCopyrightYear();
         await loadProjectsData();
+        updateNavItems();
         updatePortfolioData();
     }
 
     app.workItem = async function () {
         setCopyrightYear();
         await loadProjectsData();
+        updateNavItems();
         loadCurrentProject();
         updatePageData();
     }
@@ -148,5 +150,23 @@
         output.classList.add('highlight');
 
         return output;
+    }
+
+    function updateNavItems() {
+        const fragment = document.createDocumentFragment();
+
+        for (let i = 0; i < app.portfolioProjects.length; i++) {
+            const a = document.createElement('a');
+            a.innerText = `Item #${i + 1}`;
+            a.href = `workitem.html?item=${i + 1}`;
+
+            const li = document.createElement('li');
+            li.appendChild(a);
+
+            fragment.appendChild(li);
+        }
+
+        const ul = document.getElementById('nav-menu');
+        ul.appendChild(fragment);
     }
 })(window.app = window.app || {});
