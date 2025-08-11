@@ -1,7 +1,7 @@
 [
     {
         "title": "Kids sports website",
-        "smallImage": "img/KidsSportsWebsite.png",
+        "smallImage": "img/KidsSportsWebsite-600w.webp",
         "smallImageAlt": "Shows off a website for kids sports that has two kids playing on the front.",
         "largeImage": "img/KidsSportsWebsiteFull.jpg",
         "largeImageAlt": "Shows off a website for kids sports with multiple views",
@@ -16,7 +16,7 @@
     },
     {
         "title": "Pet adoption campaign",
-        "smallImage": "img/PetAdoptionCampaign.png",
+        "smallImage": "img/PetAdoptionCampaign-600w.webp",
         "smallImageAlt": "Shows off print pieces asking people to adopt pets instead of shopping for them.",
         "largeImage": "img/PetAdoptionCampaignFull.jpg",
         "largeImageAlt": "Shows off multiple print pieces asking people to adopt pets instead of shopping for them.",
@@ -30,7 +30,7 @@
     },
     {
         "title": "Pub website",
-        "smallImage": "img/PubWebsite.png",
+        "smallImage": "img/PubWebsite-600w.webp",
         "smallImageAlt": "Shows off a website for a pub. The page has pictures of pizza and pizza making.",
         "largeImage": "img/PubWebsiteFull.jpg",
         "largeImageAlt": "Shows off a website for a pub with multiple page views. The pages all have a pizza theme.",
