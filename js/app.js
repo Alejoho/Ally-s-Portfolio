@@ -85,6 +85,8 @@
         img.alt = app.currentProject.largeImageAlt;
         img.sizes = app.currentProject.largeImageSizes;
         img.srcset = app.currentProject.largeImageSrcset;
+        img.width = app.currentProject.largeImageWidth;
+        img.height = app.currentProject.largeImageHeight;
 
         const projectP = document.querySelector('#project-text>p');
         projectP.innerText = app.currentProject.projectText;
@@ -147,6 +149,8 @@
         const img = document.createElement('img');
         img.src = data.smallImage;
         img.alt = data.smallImageAlt;
+        img.width = data.smallImageWidth;
+        img.height = data.smallImageHeight;
         output.append(img);
 
         output.classList.add('highlight');
