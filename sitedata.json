@@ -5,6 +5,8 @@
         "smallImageAlt": "Shows off a website for kids sports that has two kids playing on the front.",
         "largeImage": "img/KidsSportsWebsiteFull.jpg",
         "largeImageAlt": "Shows off a website for kids sports with multiple views",
+        "largeImageSizes": "(max-width: 1100px) 100vw, 1100px",
+        "largeImageSrcset": "img/KidsSportsWebsiteFull-600w.webp 600w, img/KidsSportsWebsiteFull-768w.webp 768w, img/KidsSportsWebsiteFull-992w.webp 992w, img/KidsSportsWebsiteFull-1200w.webp 1200w",
         "projectText": "Project #1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et libero consequatur modi expedita quibusdam molestias tempore laudantium ducimus dignissimos?",
         "challengesText": "Challenges #1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et libero consequatur modi expedita quibusdam molestias tempore laudantium ducimus dignissimos?",
         "technologies": [
@@ -20,6 +22,8 @@
         "smallImageAlt": "Shows off print pieces asking people to adopt pets instead of shopping for them.",
         "largeImage": "img/PetAdoptionCampaignFull.jpg",
         "largeImageAlt": "Shows off multiple print pieces asking people to adopt pets instead of shopping for them.",
+        "largeImageSizes": "(max-width: 1100px) 100vw, 1100px",
+        "largeImageSrcset": "img/PetAdoptionCampaignFull-600w.jpg 600w, img/PetAdoptionCampaignFull-768w.jpg 768w, img/PetAdoptionCampaignFull-992w.jpg 992w, img/PetAdoptionCampaignFull-1200w.jpg 1200w",
         "projectText": "Project #2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aspernatur ad praesentium cupiditate aut incidunt delectus quidem sint quibusdam sapiente.",
         "challengesText": "Challenge #2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aspernatur ad praesentium cupiditate aut incidunt delectus quidem sint quibusdam sapiente.",
         "technologies": [
@@ -34,6 +38,8 @@
         "smallImageAlt": "Shows off a website for a pub. The page has pictures of pizza and pizza making.",
         "largeImage": "img/PubWebsiteFull.jpg",
         "largeImageAlt": "Shows off a website for a pub with multiple page views. The pages all have a pizza theme.",
+        "largeImageSizes": "(max-width: 1100px) 100vw, 1100px",
+        "largeImageSrcset": "img/PubWebsiteFull-600w.jpg 600w, img/PubWebsiteFull-768w.jpg 768w, img/PubWebsiteFull-992w.jpg 992w, img/PubWebsiteFull-1200w.jpg 1200w",
         "projectText": "Project #3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aspernatur ad praesentium cupiditate aut incidunt delectus quidem sint quibusdam sapiente.",
         "challengesText": "Challenge #3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aspernatur ad praesentium cupiditate aut incidunt delectus quidem sint quibusdam sapiente.",
         "technologies": [

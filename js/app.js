@@ -83,6 +83,8 @@
         const img = document.getElementById('work-item-img');
         img.src = app.currentProject.largeImage;
         img.alt = app.currentProject.largeImageAlt;
+        img.sizes = app.currentProject.largeImageSizes;
+        img.srcset = app.currentProject.largeImageSrcset;
 
         const projectP = document.querySelector('#project-text>p');
         projectP.innerText = app.currentProject.projectText;
